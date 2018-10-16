@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Form</title>
+</head>
+<body>
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<table align="center" cellpadding="20">
+  <tr>
+    <td colspan="2" bgcolor="#aaa">
+      <form action="https://www.straus.md/en/">
+        <input list="optiuni" type="text" size="50" autofocus name="query">
+        <datalist id="optiuni">
+          <option value="pizza"></option>
+          <option value="kebab"></option>
+          <option value="salat"></option>
+          <option value="burgher"></option>
+        </datalist>
+        <button >SEARCH</button>
+      </form>
+
+
+    </td>
+  </tr>
+<tr>
+  <td>
+    <img src="https://straus.s3.amazonaws.com/media/products2/6595_big.jpg?version=1538476214">
+  </td >
+  <td align="center" bgcolor="#CBA" >
+    <form>
+      <h1>Shrimp McWrap</h1>
+      <hr>
+      <h2>Ingredients</h2>
+      <ol type="a">
+        <li>Shrimps</li>
+        <li>Frunze de salată</li>
+        <li>Onion</li>
+        <li>Sauce</li>
+      </ol>
+      <b>
+        delivery from <a href="https://www.straus.md/en/restaurant/mcdonalds/">McDonald's</a> in Chisinau
+      </b>
+        <br>
+        <small>
+        Masa 300gr
+      </small>
+      <br>
+      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    </form>
+    <h3>Pretul 65lei</h3>
+    <label>
+      Portii:
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </label>
+    <label>
+      Tacimuri:
+      <input type="checkbox">
+    </label>
+    <br>
+    <br>
+    <button type="button" name="button"> &#9733; Comanda </button>
+  </td>
+
+
+</tr>
+
+</table>
+<marquee>
+<h3>Taiem Preturi! Reduceri -99% </h3>
+</marquee>
+
+</body>
+</html>
