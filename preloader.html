@@ -24,7 +24,7 @@
     left: 7px;
     top: 7px;
     border-radius: 50px;
-    animation: rot 5s;
+    animation: rot 5s linear infinite;
   }
   .dot{
     width: 5px;
@@ -38,8 +38,12 @@
 
   }
   @keyframes rot{
-    from{ transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
+    0%{ transform: rotate(0deg);
+    border-color: white;}
+    50%{ transform: rotate(180deg);
+    border-color: #777;}
+    100%{transform: rotate(360deg);
+    border-color: white;}
   }
   </style>
 </head>
