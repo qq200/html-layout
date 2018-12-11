@@ -5,5 +5,80 @@
   float: left;
   border: 3px solid #5f1629;
   border-radius: 3px;
-  background-image: radial-gradient(#b6393a,#380d29);
+  background: linear-gradient( to top left, #380d29, #b6393a);
+
 }
+.cerc-galben1{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  background-color: yellow;
+  opacity: 0.6;
+  }
+  .cerc-galben2{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    background-color: yellow;
+    opacity: 0.4;
+    }
+    .cerc-galben3{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        position: relative;
+        background-color: yellow;
+        opacity: 0.3;
+        }
+#ceas{
+  width: 100px;
+  height: 50px;
+  position: relative;
+  background-color: white;
+  content:'10:50';
+  color: red;
+}
+#cerc-centru{
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  position: relative;
+  background-color: #671d2f;
+  top: 155px;
+  right: -60px;
+}
+#cerc-punctat{
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  position: relative;
+  top: 10px;
+  right: -10px;
+  border: 10px dotted white;
+  padding: 0px;
+}
+.cerc-galben1:nth-child(1){top: 150px; right: -52px;}
+.cerc-galben1:nth-child(2){top: 65px; right: -148px;}
+.cerc-galben1:nth-child(3){top: 20px; right: -26px;}
+.cerc-galben1:nth-child(4){top: 20px; right: -42px;}
+.cerc-galben1:nth-child(5){top: 20px; right: -29px;}
+.cerc-galben1:nth-child(6){top: 74px; right: -62px;}
+.cerc-galben1:nth-child(7){top: 6px; right: -235px;}
+.cerc-galben2:nth-child(8){top: -65px; right: -252px;}
+.cerc-galben2:nth-child(9){top: -35px; right: -148px;}
+.cerc-galben2:nth-child(10){top: -218px; right: -226px;}
+.cerc-galben2:nth-child(11){top: -206px; right: -234px;}
+.cerc-galben2:nth-child(12){top: -231px; right: -29px;}
+.cerc-galben2:nth-child(13){top: -281px; right: -62px;}
+.cerc-galben2:nth-child(14){top: -476px; right: -235px;}
+.cerc-galben2:nth-child(15){top: -479px; right: -215px;}
+.cerc-galben3:nth-child(16){top: -65px; right: -252px;}
+.cerc-galben3:nth-child(17){top: -35px; right: -148px;}
+.cerc-galben3:nth-child(18){top: -218px; right: -226px;}
+.cerc-galben3:nth-child(19){top: -206px; right: -234px;}
+.cerc-galben3:nth-child(20){top: -231px; right: -29px;}
+.cerc-galben3:nth-child(21){top: -281px; right: -62px;}
+.cerc-galben3:nth-child(22){top: -476px; right: -235px;}
+.cerc-galben3:nth-child(23){top: -479px; right: -215px;}
