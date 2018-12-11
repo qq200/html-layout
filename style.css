@@ -6,7 +6,15 @@
   border: 3px solid #5f1629;
   border-radius: 3px;
   background: linear-gradient( to top left, #380d29, #b6393a);
-
+  z-index: 10;
+}
+p{
+  color:white;
+  font-size: 15px;
+  margin: 0;
+  position: relative;
+  top: 90px;
+  left: 120px;
 }
 .cerc-galben1{
   width: 40px;
@@ -15,6 +23,7 @@
   position: relative;
   background-color: yellow;
   opacity: 0.6;
+  z-index: 1;
   }
   .cerc-galben2{
     width: 50px;
@@ -23,6 +32,7 @@
     position: relative;
     background-color: yellow;
     opacity: 0.4;
+    z-index: 2;
     }
     .cerc-galben3{
         width: 70px;
@@ -31,14 +41,16 @@
         position: relative;
         background-color: yellow;
         opacity: 0.3;
+        z-index: 3;
         }
 #ceas{
   width: 100px;
   height: 50px;
   position: relative;
-  background-color: white;
-  content:'10:50';
-  color: red;
+  color: white;
+  font-size: 45px;
+  top:90px;
+  left:90px;
 }
 #cerc-centru{
   width: 180px;
@@ -46,8 +58,9 @@
   border-radius: 100%;
   position: relative;
   background-color: #671d2f;
-  top: 155px;
+  top: 105px;
   right: -60px;
+  z-index: 10;
 }
 #cerc-punctat{
   width: 140px;
@@ -64,8 +77,8 @@
 .cerc-galben1:nth-child(3){top: 20px; right: -26px;}
 .cerc-galben1:nth-child(4){top: 20px; right: -42px;}
 .cerc-galben1:nth-child(5){top: 20px; right: -29px;}
-.cerc-galben1:nth-child(6){top: 74px; right: -62px;}
-.cerc-galben1:nth-child(7){top: 6px; right: -235px;}
+.cerc-galben1:nth-child(6){top: -30px; right: -62px;}
+.cerc-galben1:nth-child(7){top: -252px; right: -248px;}
 .cerc-galben2:nth-child(8){top: -65px; right: -252px;}
 .cerc-galben2:nth-child(9){top: -35px; right: -148px;}
 .cerc-galben2:nth-child(10){top: -218px; right: -226px;}
