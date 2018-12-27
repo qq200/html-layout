@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    nav>ul>li{
+      float: left;
+      list-style: none;
+      width: 150px;
+    }
+    nav>ul>li>ul{
+      /*display: none;*/
+      opacity: 0;
+      transition: 0.5s;
+    }
+    nav>ul>li:hover>ul{
+      /*display: block;*/
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="">Link 1</a></li>
+    <li>
+        <a href="">Link 2</a>
+            <ul>
+              <li><a href="">Sublink 1</a></li>
+              <li><a href="">Sublink 2</a></li>
+              <li><a href="">Sublink 3</a></li>
+              <li><a href="">Sublink 4</a></li>
+              <li><a href="">Sublink 5</a></li>
+            </ul>
+    </li>
+    <li><a href="">Link 3</a></li>
+  </ul>
+</nav>
+
+
+
+</body>
+</html>
