@@ -1,6 +1,7 @@
 body{
     font-family: 'Nunito', sans-serif;
     color: #444;
+    margin-top: 50px;
 }
 div{
    margin-bottom: 10px; 
@@ -46,6 +47,7 @@ color:blue;
 
 .border-blue{
     border: solid 1px #3452ff;
+    width: 400px;
 }
 
 .form-element input,
@@ -83,12 +85,63 @@ button{
     border: solid 1px #3452ff;
     font-weight: bold;
     font-size: 15px;
-
 }
-
-
-
-
+#benefits>div>.fa.fa-id-card-o{
+    color: #3452ff;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#benefits>div>.fa.fa-users{
+    color: red;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#benefits>div>.fa.fa-globe{
+    color: green;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#benefits>div>p{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.form-element input{
+    width: 100%;
+    box-sizing: border-box;
+}
+.line{
+    background-color:#ccc;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    transform: skewY( 8deg);
+    }
+#benefits>div:nth-child(2){
+    position: relative;
+    top: -110px;
+}
+#benefits>div:nth-child(3){
+    position: relative;
+    top: -30px;
+}
+#benefits>div:nth-child(4){
+    position: relative;
+    top: 30px;
+}
+.fa.fa-chevron-circle-up{
+    font-size: 25px;
+    color:#777;
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+    
+}
 
 
 
