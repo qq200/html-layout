@@ -1,0 +1,65 @@
+<script>
+
+    const PRICE_SUSHI = 300;
+    const PRICE_BORSH = 30;
+    const PRICE_PIZZA = 60;
+    const PRICE_WINE = 100;
+    const PRICE_COLA = 10;
+    const PRICE_COFFEE = 200;
+
+
+
+    const MENU = `
+#####################
+__________Food_______
+1.Sushi - ${PRICE_SUSHI} MDL
+2.Borsh - ${PRICE_BORSH}MDL
+3.Pizza -${PRICE_PIZZA}MDL
+_________Drink________
+4.Wine -${PRICE_WINE} MDL
+5.Cola -${PRICE_COLA} MDL
+6.Coffee -${PRICE_COFFEE} MDL
+-----------------------
+0.Complete Order/EXIT
+#####################
+`;
+
+var total_cost=0;
+
+while(true){
+var option = prompt(MENU);
+if(option==0){
+    alert(`
+    YOUR ORDER TOTAL IS ${total_cost}MDL
+    Thank you!`);
+    break;
+}
+if(option<1 || option>6){
+    alert("WRONG OPTIONS");
+}else{
+    var n=prompt("HOW MANY?");
+    var price;
+        if(option==1) price=PRICE_SUSHI;
+        if(option==2) price=PRICE_BORSH;
+        if(option==3) price=PRICE_PIZZA;
+        if(option==4) price=PRICE_WINE;
+        if(option==5) price=PRICE_COLA;
+        if(option==6) price=PRICE_COFFEE;
+
+    var cost=n*price;
+    var ok=confirm (`${n} portions will cost ${cost}MDL
+                    ORDER?
+                    `);
+    if(ok){
+        total_cost += cost;
+    }
+    console.log(ok);
+
+}
+}
+
+
+
+
+
+</script>
