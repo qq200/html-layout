@@ -1,20 +1,19 @@
 <pre><script>
-
 var row=1;
 while(row<=10){
-
-
-
-
         // row -> 10x#//////
         var col=1;
         while(col<=10){
+            if(col==10 || row==10 || col==1 || row==1 || col==row || col==11-row){
+                document.write(`+ `);
+            }else{
             document.write(`# `);
-            col++;
+            }  
+            
+            col++;            
         }
             
         document.write("\n");
-
         /////////////////////  
     row++;
 } 
