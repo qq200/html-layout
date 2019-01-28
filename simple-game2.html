@@ -1,0 +1,18 @@
+<pre><script>
+function square(size){
+    var row=1;
+    while(row<=size){
+                    var col;
+            for(col=1;col<=size;col++){
+                if(col==size || row==size || col==1 || row==1 || col==row || col+row==size+1){
+                    document.write(`+ `);
+                }else{
+                document.write(`# `);
+                }                                    
+            }            
+            document.write("\n");
+        row++;
+    } 
+}
+square(12);
+</script></pre>
