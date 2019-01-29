@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Preloader 26</title>
+  <style media="screen">
+    #preloader{
+      width: 200px;
+      height: 200px;
+      border: 1px dotted blue;
+      margin-left: 300px;
+      overflow: hidden;
+    }
+    #preloader .box{
+      width: 200px;
+      height: 100px;
+      background-color: #2C3E50;
+      position: relative;
+      top: 100px;
+    }
+    .curve-dark{
+      background-color: inherit;
+      width: 300px;
+      height: 100px;
+      border-radius: 100%;
+      position: absolute;
+      top: -13px;
+      left: -50px;
+      transform-origin: 50% 13px;
+      animation: dark-animation 3s cubic-bezier(1,0.5,1,0.5) infinite;
+    }
+    .curve-light{
+      background-color: white;
+      width: 300px;
+      height: 100px;
+      border-radius: 100%;
+      position: absolute;
+      top: -87px;
+      left: -50px;
+      transform-origin: 50% 80px;
+      animation: light-animation 3s cubic-bezier(1,0.5,1,0.5) infinite;
+
+    }
+    #triunghi{
+height: 0; width:0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid #fff;
+position: relative;
+animation: rotire-triunghi 3s  infinite;
+display: none;
+}
+.mic{
+height: 0; width:0;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+border-bottom: 60px solid #2C3E50;
+position: relative;
+bottom: -28px;
+left: -30px;
+}
+.patrat{
+  width: 40px; height: 40px;
+  border: 4px solid #2C3E50;
+  position: absolute;
+  left: 70px;
+  animation: patrat-animation 3s cubic-bezier(.2,0.5,0.1,0.5) infinite;
+}
+@keyframes dark-animation{
+0%{transform: scaleY(0);}
+25%{transform: scaleY(1);}
+50%{transform: scaleY(0);}
+100%{transform: scaleY(0);}
+}
+@keyframes light-animation{
+0%{transform: scaleY(0);}
+25%{transform: scaleY(0);}
+50%{transform: scaleY(1);}
+100%{transform: scaleY(0);}
+}
+
+@keyframes rotire-triunghi{
+from{transform: rotate(0deg);top: 0%;}
+to{transform: rotate(360deg); top: -140%;}
+}
+@keyframes patrat-animation{
+0%{top:10px;transform: rotate(0deg); color:white}
+25%{top:-65px;transform:rotate(-150deg);color: #2C3E50}
+50%{top:-80px;transform: rotate(-250deg);color: #2C3E50}
+100%{top:10px;transform: rotate(-360deg);color:white}
+}
+
+  </style>
+</head>
+<body>
+<div id="preloader">
+  <div class="box">
+      <div class="curve-dark"></div>
+      <div class="curve-light"></div>
+      <div class="square"></div>
+        <div id="triunghi">
+          <div class="mic"></div>
+        </div >
+      <div class="patrat">
+      </div>
+  </div>
+
+</div>
+</body>
+</html>
