@@ -1,0 +1,29 @@
+<script>
+// <!-- 1 -->
+let house1={
+    rooms: 3,
+    address: "Copacilor, 10",
+    owner: "V. V.",
+    guest: null
+};
+let house2={
+    rooms: 3,
+    address: "Copacilor, 11",
+    owner: "X. X.",
+    guest: null
+};
+// <!-- 2 -->
+let person={
+    name: "P. P.",
+    age: 55,
+
+    goIn: function(h){
+        alert('Going Inside the house of'+ h.owner);
+        h.guest=person;
+    }
+
+};
+// <!-- //////// -->
+person.goIn(house1);
+person.goIn(house2);
+</script>
