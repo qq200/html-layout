@@ -1,0 +1,10 @@
+#land{
+    border-bottom: 5px solid green;
+}
+
+#land .dino{
+    width: 48px;
+    height: 48px;
+    background-image: url(icon/rex.png);
+    transform: scaleX(-1);
+}
