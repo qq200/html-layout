@@ -1,0 +1,30 @@
+<script>
+
+// 1 object
+
+let big_dog={
+    gender: "M",
+    race: "Labrador",
+    color: "white",
+    angry: false,
+    year: 2017,
+
+    owner: null
+};
+
+
+let my_friend={
+    name: "Vovan",
+
+
+    dog:null,
+
+    buyDog: function(d /*object of dog*/){
+        console.log(`Eu cumpar ${d.race}`);
+        d.owner=my_friend;
+        my_friend.dog=d;
+    }
+};
+my_friend.buyDog(big_dog);
+
+</script>
