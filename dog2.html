@@ -1,0 +1,26 @@
+<script>
+
+let dog={
+    name: "Goodboicik",
+    age: 2, //years
+    weight:5, //kg
+
+    eat: function(b){
+        if(box.weight>0){
+        console.log('I am eating 1kg');
+        b.weight--;
+        dog.weight=dog.weight*1.02;
+        }else{
+            alert('Netu Cushati!!!!');
+        }
+    }
+};
+
+let box={
+    weight: 10,
+    
+};
+
+dog.eat(box);
+
+</script>
